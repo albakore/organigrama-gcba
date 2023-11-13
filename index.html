@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<pre id="dataFetch">
+
+	</pre>
+</body>
+<script>
+
+const mockData = {
+	"sigla": "MJGGC",
+	"codigo-reparticion": "21010000",
+	"descripcion-reparticion": "Jefatura de Gabinete de Ministros",
+	"tipo-reparticion": "Ministerio",
+	"fuera-nivel": null,
+	"padre": "20980000",
+	"path": "/ROOT/20980000/20400000/21010000",
+	"path-nombres": "\\Jefe de Gobierno\\ViceJefe de Gobierno\\Jefe de Gabinete",
+	"apellido-nombre": "MIGUEL, FELIPE OSCAR",
+	"mail-laboral": "fmiguel@buenosaires.gob.ar",
+	"telefono-laboral": null,
+	"domicilio-laboral": null,
+	"DEPENDE_MINISTERIO": "NO",
+	"ranking": "3",
+	"tiene-hijos": "VERDADERO"
+}
+
+
+const element = document.getElementById('dataFetch');
+
+async function logMovies() {
+  const response = await fetch("https://api-meta4.gcba.gob.ar/api/auth/mapa-gobierno",{
+	method:'POST'
+  });
+  const movies = await response.json();
+	element.innerHTML = JSON.stringify(movies,null,2);
+  console.log(movies);
+}
+
+logMovies()
+
+</script> 
+
+</html>
