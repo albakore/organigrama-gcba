@@ -1,49 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<pre id="dataFetch">
+<html>
+  <head>
+   
+    <link rel="stylesheet" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    </head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <body style="background-color: #ffda00;" onload="cargar">
+    <div id="encabezado_arriba">
+    	<h1>
+        	<a href="http://www.buenosaires.gob.ar" title="Buenos Aires Ciudad">
+            	Buenos Aires Ciudad
+            </a>
+        </h1>
+        <div class="buscador_encabezado">
+        	<div class="input_buscador_encabezado">
+            	<input id="input_buscador_general" type="text">
+            </div>
+            <div class="boton_buscador_encabezado">
+            	<a></a>
+            </div>
+        </div>
+    </div>
+    <style type="text/css" media="screen">
+      <!--
+      @import url("https://buenosaires.gob.ar/css2/estructura.css");
+      @import url("https://buenosaires.gob.ar/css2/encabezado.css");
+      @import url("https://buenosaires.gob.ar/css2/menu.css");
+      @import url("https://buenosaires.gob.ar/css2/contenido.css");
+      @import url("https://buenosaires.gob.ar/css2/banners.css");
+      -->
+      </style>
+    <style>
 
-	</pre>
-</body>
-<script>
+		.google-visualization-orgchart-node.google-visualization-orgchart-node-medium{
+			font-family: 'Nunito',sans-serif;
+			font-weight: 800;
+			font-size: 20px;
+			color: rgb(75, 75, 75);
+			padding: 10px;
+			
+			background: white;
+			border: 2px solid rgb(109, 197, 255);
+			border-radius: 10px;
+		}
 
-const mockData = {
-	"sigla": "MJGGC",
-	"codigo-reparticion": "21010000",
-	"descripcion-reparticion": "Jefatura de Gabinete de Ministros",
-	"tipo-reparticion": "Ministerio",
-	"fuera-nivel": null,
-	"padre": "20980000",
-	"path": "/ROOT/20980000/20400000/21010000",
-	"path-nombres": "\\Jefe de Gobierno\\ViceJefe de Gobierno\\Jefe de Gabinete",
-	"apellido-nombre": "MIGUEL, FELIPE OSCAR",
-	"mail-laboral": "fmiguel@buenosaires.gob.ar",
-	"telefono-laboral": null,
-	"domicilio-laboral": null,
-	"DEPENDE_MINISTERIO": "NO",
-	"ranking": "3",
-	"tiene-hijos": "VERDADERO"
-}
+		.google-visualization-orgchart-linebottom {
+			border-bottom: 5px solid #3388dd;
+		}
+
+		
+
+    </style>
+    <div id="chart_div"></div>
+    
+  </body>
+
+ 
+  <script type="text/javascript">
+	  
+	google.charts.load('current', {packages:["orgchart"]});
+	google.charts.setOnLoadCallback(drawChart);
+
+	function drawChart() {
+	  var data = new google.visualization.DataTable();
 
 
-const element = document.getElementById('dataFetch');
+	  data.addColumn('string', 'Name');
+	  data.addColumn('string', 'Manager');
+	  data.addColumn('string', 'ToolTip');
+	  
+	  // [Nombre, Superior, Tooltip]
+	  // ['Lean','Kevin', '']
+	  
+	  // For each orgchart box, provide the name, manager, and tooltip to show.
+	  data.addRows([
+		['Kevin','', ''],
+			['Lean','Kevin', ''],
+		['Lean','Kevin', ''],
+		['Pepe','Kevin', ''],
+		['Tato','Kevin', ''],
+		['Maxi','Lean', ''],
+		['Lean','Adri', ''],
+		['Adri','Kevin', ''],
+		['Kari','Lean', ''],
+	  ]);
+    //
+	
 
-async function logMovies() {
-  const response = await fetch("https://api-meta4.gcba.gob.ar/api/auth/mapa-gobierno",{
-	method:'POST'
-  });
-  const movies = await response.json();
-	element.innerHTML = JSON.stringify(movies,null,2);
-  console.log(movies);
-}
+	  // Create the chart.
+	  var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
 
-logMovies()
+	  var options = {'title':'How Much Pizza I Ate Last Night',
+				   'width':300,
+				   'height':300,
+				   'is3D':true,
+				   'legend':'left',
+				  };
+	  // Draw the chart, setting the allowHtml option to true for the tooltips.
+	  chart.draw(data, {'allowHtml':true,...options});
+	}
 
-</script> 
+	//  function cargar (e){
+	//   const td = document.querySelectorAll('.google-visualization-orgchart-node.google-visualization-orgchart-node-medium');
+  //   	console.log(td)
 
+	//   td.forEach(element => {
+	// 	  element.setAttribute('style', 'border: 2px solid red');
+	//   })
+	  
+    
+	// }
+	
+ </script>
+  
 </html>
