@@ -1,118 +1,137 @@
 <html>
-  <head>
-   
+    <head>
     <link rel="stylesheet" href="style.css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     </head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <body style="background-color: #ffda00;" onload="cargar">
-    <div id="encabezado_arriba">
-    	<h1>
-        	<a href="http://www.buenosaires.gob.ar" title="Buenos Aires Ciudad">
-            	Buenos Aires Ciudad
-            </a>
-        </h1>
-        <div class="buscador_encabezado">
-        	<div class="input_buscador_encabezado">
-            	<input id="input_buscador_general" type="text">
-            </div>
-            <div class="boton_buscador_encabezado">
-            	<a></a>
-            </div>
-        </div>
-    </div>
-    <style type="text/css" media="screen">
-      <!--
-      @import url("https://buenosaires.gob.ar/css2/estructura.css");
-      @import url("https://buenosaires.gob.ar/css2/encabezado.css");
-      @import url("https://buenosaires.gob.ar/css2/menu.css");
-      @import url("https://buenosaires.gob.ar/css2/contenido.css");
-      @import url("https://buenosaires.gob.ar/css2/banners.css");
-      -->
-      </style>
+
+  <body>
     <style>
+      .card{
+		    font-family: 'Nunito',sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:10px;
+        border: 2px solid #f0f0f0;
+        padding : 10px;
+				border-radius:10px;
+				border: 2px solid #f0f0f0;
+      }
+     .card:hover{
+        border: 2px solid #005387 !important;
+      }
+    .card:hover, .card:hover .name{
+      color: #005387 !important;
+      text-decoration: underline;
+      } 
+    .name{
+      font-size:15px;
+      color:#38485C;
+      margin-left:20px;
+    }
 
-		.google-visualization-orgchart-node.google-visualization-orgchart-node-medium{
-			font-family: 'Nunito',sans-serif;
-			font-weight: 800;
-			font-size: 20px;
-			color: rgb(75, 75, 75);
-			padding: 10px;
-			
-			background: white;
-			border: 2px solid rgb(109, 197, 255);
-			border-radius: 10px;
-		}
-
-		.google-visualization-orgchart-linebottom {
-			border-bottom: 5px solid #3388dd;
-		}
-
-		
 
     </style>
-    <div id="chart_div"></div>
+	<input
+	type="search"
+	placeholder="search by name"
+	oninput="filterChart(event)"
+	/>
+    <div class="chart-container" style="border-radius: 10px;  box-shadow: inset 0 0 10px #494949;"></div>
     
   </body>
-
  
-  <script type="text/javascript">
-	  
-	google.charts.load('current', {packages:["orgchart"]});
-	google.charts.setOnLoadCallback(drawChart);
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@3.0.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
+  
+  <script>
 
-	function drawChart() {
-	  var data = new google.visualization.DataTable();
+	let chart;
 
+	function filterChart(e) {
+		
+		// Get input value
+		const value = e.srcElement.value;
 
-	  data.addColumn('string', 'Name');
-	  data.addColumn('string', 'Manager');
-	  data.addColumn('string', 'ToolTip');
-	  
-	  // [Nombre, Superior, Tooltip]
-	  // ['Lean','Kevin', '']
-	  
-	  // For each orgchart box, provide the name, manager, and tooltip to show.
-	  data.addRows([
-		['Kevin','', ''],
-			['Lean','Kevin', ''],
-		['Lean','Kevin', ''],
-		['Pepe','Kevin', ''],
-		['Tato','Kevin', ''],
-		['Maxi','Lean', ''],
-		['Lean','Adri', ''],
-		['Adri','Kevin', ''],
-		['Kari','Lean', ''],
-	  ]);
-    //
-	
+		// Clear previous higlighting
+		chart.clearHighlighting();
 
-	  // Create the chart.
-	  var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+		// Get chart nodes
+		const data = chart.data();
 
-	  var options = {'title':'How Much Pizza I Ate Last Night',
-				   'width':300,
-				   'height':300,
-				   'is3D':true,
-				   'legend':'left',
-				  };
-	  // Draw the chart, setting the allowHtml option to true for the tooltips.
-	  chart.draw(data, {'allowHtml':true,...options});
+		// Mark all previously expanded nodes for collapse
+		data.forEach((d) => (d._expanded = false));
+
+		// Loop over data and check if input value matches any name
+		data.forEach((d) => {
+		if (value != '' && d.name.toLowerCase().includes(value.toLowerCase())) {
+			// If matches, mark node as highlighted
+			d._highlighted = true;
+			d._expanded = true;
+		}
+		});
+
+		// Update data and rerender graph
+		chart.data(data).render().fit();
+
+		console.log('filtering chart', e.srcElement.value);
 	}
 
-	//  function cargar (e){
-	//   const td = document.querySelectorAll('.google-visualization-orgchart-node.google-visualization-orgchart-node-medium');
-  //   	console.log(td)
+	d3.csv(
+	  'https://raw.githubusercontent.com/bumbeishvili/sample-data/main/data-oracle.csv'
+	).then((data) => {
+	  chart = new d3.OrgChart()
+		.nodeHeight((d) => 85 + 25) // Largo de cada nodo
+		.nodeWidth((d) => 220 + 2) // Ancho de cada nodo
+		.childrenMargin((d) => 30) // Margin entre padre/hijo
+		.compactMarginBetween((d) => 50)
+		.compactMarginPair((d) => 50) //
+		.neighbourMargin((a, b) => 20)
+		.nodeContent(function (d, i, arr, state) {
+		  const color = '#fffff';
+		  const imageDiffVert = 15 + 3; //Margin top de la imagen. (Para modificar su posición en eje x)
 
-	//   td.forEach(element => {
-	// 	  element.setAttribute('style', 'border: 2px solid red');
-	//   })
-	  
-    
-	// }
-	
- </script>
+ 
+		  
+		  return ` 
+			<div 
+            style=  
+            'width:${d.width}px;
+            height:${d.height}px;
+            padding-top:${imageDiffVert - 2}px;
+            padding-left:1px;
+            padding-right:1px'
+            '
+          	>
+			  <div class="card" 
+			  style="
+			  
+			  background-color:${color};
+			  
+			  ">	 
+				  <img src=" ${d.data.image}" 
+				  style="
+				  border-radius:100px; 
+				  width:50px; 
+				  height:50px; 
+				  border: 2px solid #f0f0f0
+				  "/>
+					  <div class="name" style="">  ${d.data.name} </div>
+					  <div style="color:#716E7B;margin-left:20px;margin-top:3px;font-size:10px;"> ${d.data.position} </div>
+				
+			  </div>
+			</div>
+			`;
+		})
+		
+		.container('.chart-container')
+		.data(data)
+		.render();
+	});
+  </script>
   
 </html>

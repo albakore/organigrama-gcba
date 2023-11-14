@@ -1,0 +1,35 @@
+@token = {{login.response.body.token}}
+@username = 
+@password = 
+@username2 = 
+@password2 = 
+
+
+# @name login
+POST https://esb.gcba.gob.ar/dotacion/autorizar
+Content-Type: application/x-www-form-urlencoded
+
+username={{username}}
+&password={{password}}
+
+###
+
+GET https://api-meta4.gcba.gob.ar/api/auth/dotacion/config_menu
+Authorization: Bearer {{token}}
+
+###
+
+GET https://api-meta4.gcba.gob.ar/api/auth/mapa-gobierno/cabecera
+Authorization: Bearer {{token}}
+
+###
+
+GET https://api-meta4.gcba.gob.ar/api/auth/mapa-gobierno/subarbol
+?codigo_reparticion=21840200
+Authorization: Bearer {{token}}
+
+###
+
+GET https://api-meta4.gcba.gob.ar/api/auth/loys/aplica
+?cuit=20394838854
+Authorization: Bearer {{token}}
