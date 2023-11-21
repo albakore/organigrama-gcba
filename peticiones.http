@@ -1,8 +1,8 @@
 @token = {{login.response.body.token}}
-@username = 
-@password = 
-@username2 = 
-@password2 = 
+@username = mapa@buenosaires.gob.ar
+@password = ah21cAg
+@username2 =
+@password2 =
 
 
 # @name login
@@ -25,7 +25,7 @@ Authorization: Bearer {{token}}
 ###
 
 GET https://api-meta4.gcba.gob.ar/api/auth/mapa-gobierno/subarbol
-?codigo_reparticion=21840200
+?codigo_reparticion=20150000
 Authorization: Bearer {{token}}
 
 ###

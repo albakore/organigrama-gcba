@@ -1,6 +1,5 @@
 <html>
     <head>
-    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
@@ -26,7 +25,7 @@
     .card:hover, .card:hover .name{
       color: #005387 !important;
       text-decoration: underline;
-      } 
+      }
     .name{
       font-size:15px;
       color:#38485C;
@@ -41,19 +40,19 @@
 	oninput="filterChart(event)"
 	/>
     <div class="chart-container" style="border-radius: 10px;  box-shadow: inset 0 0 10px #494949;"></div>
-    
+
   </body>
- 
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@3.0.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
-  
+
   <script>
 
 	let chart;
 
 	function filterChart(e) {
-		
+
 		// Get input value
 		const value = e.srcElement.value;
 
@@ -95,11 +94,11 @@
 		  const color = '#fffff';
 		  const imageDiffVert = 15 + 3; //Margin top de la imagen. (Para modificar su posición en eje x)
 
- 
-		  
-		  return ` 
-			<div 
-            style=  
+
+
+		  return `
+			<div
+            style=
             'width:${d.width}px;
             height:${d.height}px;
             padding-top:${imageDiffVert - 2}px;
@@ -107,31 +106,31 @@
             padding-right:1px'
             '
           	>
-			  <div class="card" 
+			  <div class="card"
 			  style="
-			  
+
 			  background-color:${color};
-			  
-			  ">	 
-				  <img src=" ${d.data.image}" 
+
+			  ">
+				  <img src=" ${d.data.image}"
 				  style="
-				  border-radius:100px; 
-				  width:50px; 
-				  height:50px; 
+				  border-radius:100px;
+				  width:50px;
+				  height:50px;
 				  border: 2px solid #f0f0f0
 				  "/>
 					  <div class="name" style="">  ${d.data.name} </div>
 					  <div style="color:#716E7B;margin-left:20px;margin-top:3px;font-size:10px;"> ${d.data.position} </div>
-				
+
 			  </div>
 			</div>
 			`;
 		})
-		
+
 		.container('.chart-container')
 		.data(data)
 		.render();
 	});
   </script>
-  
+
 </html>
