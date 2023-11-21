@@ -281,12 +281,20 @@
                           </div>
                         </div>
                         <div class="_none">
-                          <div class="container">
+                          <div class="container container_chart">
                             <style>
+                              .container_chart{
+                                height: 90vh;
+                              }
+                              .chart-container{
+                                width: 100vw !important;
+                                position: absolute;
+                                left: 0;
+                              }
                               .card {
                                 font-family: "Nunito", sans-serif;
                                 display: flex;
-                                flex-direction: row;
+                                flex-direction: column;
                                 align-items: center;
                                 align-content: center;
                                 justify-content: center;
@@ -294,8 +302,8 @@
                                 border: 2px solid #3d3d3d;
                                 padding: 10px;
                                 border-radius: 10px;
-                                height: max-content !important;
-                                width: 260px;
+                                height: 150px !important;
+
                               }
                               #id20980000{
                                 border: 2px solid #007bc7 !important;
@@ -358,6 +366,14 @@
                               .name {
                                 font-size: 20px;
                                 color: #38485c;
+                              }
+
+                              .body{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 8px;
                               }
                             </style>
                             <div class="form-group">

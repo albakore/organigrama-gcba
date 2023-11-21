@@ -103,22 +103,17 @@ d3.json("./cabecera.json").then((data) => {
           style="
           background-color:${color};
           ">
-            <img
-            src=" ${d.data.imageUrl}"
-            style="
-            border-radius:10px;
-            width:4rem;
-            height:4rem;
-            border: 2px solid #f0f0f0
-            "/>
-            <div>
+
+            <div class="body">
               <div class="name" style="">  ${convertirNombre(
                 d.data.name
               )} </div>
-              <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em">
+              <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content">
               ${d.data.position}
               </div>
-              <span>${getNumberOfChildren(d)} </span>
+              <div style="background-color:#F3F6F9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #505E70;color:#505E70;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content">
+              ${getNumberOfChildren(d)}
+              </div>
             </div>
           </div>
         </div>
