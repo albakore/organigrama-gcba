@@ -48,7 +48,7 @@ function getNumberOfChildren(node) {
   } else if (node._children) {
     return node._children.length;
   } else {
-    return 0;
+    return '';
   }
 }
 
@@ -58,14 +58,15 @@ d3.json("./cabecera.json").then((data) => {
   chart = new d3.OrgChart()
     // .nodeHeight((d) => 120) // Altura de cada nodo
     // .nodeWidth((d) => 300) // Ancho de cada nodo
-    .childrenMargin((d) => 55) // Margin entre padre/hijo
+    .childrenMargin((d) => 35) // Margin entre padre/hijo
     .compactMarginBetween((d) => 70) // margin top entre nodos
-    .compactMarginPair((d) => 85) //margin sides
+    .compactMarginPair((d) => 100) //margin sides
     .neighbourMargin((a, b) => 70)
     .nodeContent(function (d, i, arr, state) {
+      const horizontalSpacing = 350; // Espaciado horizontal entre nodos
 
       const color = "#f5f9fc";
-      const imageDiffVert = 20; //Margin top de la imagen. (Para modificar su posición en eje x)
+      const imageDiffVert = 0; //Margin top de la imagen. (Para modificar su posición en eje x)
 
       //Funcion para escribir correctamente el nombre:
       function convertirNombre(nombre) {
