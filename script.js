@@ -59,8 +59,8 @@ d3.json("./cabecera.json").then((data) => {
     // .nodeHeight((d) => 120) // Altura de cada nodo
     // .nodeWidth((d) => 300) // Ancho de cada nodo
     .childrenMargin((d) => 55) // Margin entre padre/hijo
-    .compactMarginBetween((d) => 100) // margin top entre nodos
-    .compactMarginPair((d) => 260) //margin sides
+    .compactMarginBetween((d) => window.innerWidth < 900 ? 50 : 100) // margin top entre nodos
+    .compactMarginPair((d) => window.innerWidth < 900 ? 100 : 260) //margin sides
     .neighbourMargin((a, b) => 70)
     .nodeContent(function (d, i, arr, state) {
       const horizontalSpacing = 350; // Espaciado horizontal entre nodos
@@ -128,6 +128,6 @@ d3.json("./cabecera.json").then((data) => {
     .render()
     //   d3.select(".chart-container svg")
     // .style("transform", "scale(1.2)")
-    // .style("transform-origin", "top"); 
+    // .style("transform-origin", "top");
 
 });
