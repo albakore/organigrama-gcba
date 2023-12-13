@@ -52,7 +52,26 @@ function getNumberOfChildren(node) {
   }
 }
 
+const horizontalSpacing = 350; // Espaciado horizontal entre nodos
 
+const color = "#f5f9fc";
+const imageDiffVert = 0; //Margin top de la imagen. (Para modificar su posición en eje x)
+
+//Funcion para escribir correctamente el nombre:
+function convertirNombre(name) {
+  if (name) {
+    const [apellido, nombre] = name.split(" ")
+                                      .map(
+                                        (word) =>
+                                          word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                                      ).join(" ").split(', ')
+                                        
+                                      
+    return nombre + " " + apellido
+  } else {
+    return ""; //Si es null, devuelve null o lo que sea.
+  }
+}
 
 d3.json("./cabecera.json").then((data) => {
   chart = new d3.OrgChart()
@@ -63,30 +82,7 @@ d3.json("./cabecera.json").then((data) => {
     .compactMarginPair((d) => window.innerWidth < 900 ? 100 : 260) //margin sides
     .neighbourMargin((a, b) => 70)
     .nodeContent(function (d, i, arr, state) {
-      const horizontalSpacing = 350; // Espaciado horizontal entre nodos
-
-      const color = "#f5f9fc";
-      const imageDiffVert = 0; //Margin top de la imagen. (Para modificar su posición en eje x)
-
-      //Funcion para escribir correctamente el nombre:
-      function convertirNombre(nombre) {
-        if (nombre) {
-          return nombre
-            .split(" ")
-            .map(
-              (word) =>
-                word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-            )
-            .join(" ");
-        } else {
-          return ""; //Si es null, devuelve null o lo que sea.
-        }
-      }
-
-      // Ejemplo de uso:
-      const nombreOriginal = "DEL AGUILA, BRENDA";
-      const nombreConvertido = convertirNombre(nombreOriginal);
-      console.log(nombreConvertido);
+      
 
       return `
         <div
@@ -106,9 +102,12 @@ d3.json("./cabecera.json").then((data) => {
           ">
 
             <div class="body">
-              <div class="name" style="">  ${convertirNombre(
+              <div class="name" style="text-align: center; padding-top: 10px;">  ${convertirNombre(
                 d.data.name
               )} </div>
+              <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content; font-weight: 700;">
+              ${d.data.tags}
+              </div>
               <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content">
               ${d.data.position}
               </div>
