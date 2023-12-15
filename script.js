@@ -21,6 +21,11 @@ function filterChart(e) {
       d.name?.toString().toLowerCase().includes(value.toLowerCase())
     ) {
       // If matches, mark node as highlighted
+
+      // document.addEventListener('DOMContentLoaded', function() {
+      //   const card = document.getElementById(`id${d.id}`)
+      //   card.style.border = '5px solid red !important';
+      // });
       d._highlighted = true;
       d._expanded = true;
     }
@@ -82,8 +87,6 @@ d3.json("./cabecera.json").then((data) => {
     .compactMarginPair((d) => window.innerWidth < 900 ? 100 : 260) //margin sides
     .neighbourMargin((a, b) => 70)
     .nodeContent(function (d, i, arr, state) {
-
-
       return `
         <div
               style=
@@ -118,14 +121,13 @@ d3.json("./cabecera.json").then((data) => {
         </div>
         `;
     })
+
     .container(".chart-container")
     .data(data)
     .onNodeClick((d) => {
       toggleNodeHighlight(d)
     })
     .render()
-    //   d3.select(".chart-container svg")
-    // .style("transform", "scale(1.2)")
-    // .style("transform-origin", "top");
+
 
 });
