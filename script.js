@@ -1,6 +1,30 @@
 let chart;
 let cabecera;
 
+// Ejemplo implementando el metodo POST:
+async function getCabeceras(url = '') {
+  // Opciones por defecto estan marcadas con un *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+// getCabeceras('https://example.com/answer')
+//   .then(data => {
+//     console.log(data); // JSON data parsed by `data.json()` call
+//   });
+
 //Funcion de la barra de busqueda:
 function filterChart(e) {
   const value = e.srcElement.value;
@@ -46,7 +70,6 @@ const toggleNodeHighlight = (node) => {
 };
 
 //Get cantidad de childrens nodo:
-
 function getNumberOfChildren(node) {
   if (node.children) {
     return node.children.length;
@@ -78,7 +101,7 @@ function convertirNombre(name) {
   }
 }
 
-d3.json("./cabecera.json").then((data) => {
+d3.json("./newCabecera.json").then((data) => {
   chart = new d3.OrgChart()
     // .nodeHeight((d) => 120) // Altura de cada nodo
     // .nodeWidth((d) => 300) // Ancho de cada nodo
@@ -105,13 +128,13 @@ d3.json("./cabecera.json").then((data) => {
 
             <div class="body">
               <div class="name" style="text-align: center; padding-top: 10px;">  ${convertirNombre(
-                d.data.name
+                d.data['apellido-nombre']
               )} </div>
               <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content; font-weight: 700;">
-              ${d.data.tags}
+              ${d.data['sigla']}
               </div>
               <div style="background-color:#e6f2f9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #007bc7;color:#38485c;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content">
-              ${d.data.position}
+              ${d.data['descripcion-reparticion']}
               </div>
               <div style="background-color:#F3F6F9;color:#716E7B;margin-top:3px;font-size:14px;box-shadow: 0 0 0 1px #505E70;color:#505E70;border-radius: 0.5rem;padding: 0 0.4em; width: fit-content">
               ${getNumberOfChildren(d)}
