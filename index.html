@@ -1,136 +1,986 @@
-<html>
-    <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
-    </head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Desarrollado con ♥ para GCBA:
+- Leandro Silva | https://github.com/leeansilva
+- Kevin Kener | https://github.com/albakore
+ -->
 
-  <body>
-    <style>
-      .card{
-		    font-family: 'Nunito',sans-serif;
+<html lang="es" dir="ltr" class="no-touchevents details js">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <link rel="canonical" href="http://buenosaires.gob.ar/areasdegobierno" />
+    <meta
+      name="description"
+      content="Conocé cada una de las áreas que conforman el Gobierno de la Ciudad de Buenos Aires."
+    />
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://buenosaires.gob.ar//sites/default/files/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link rel="revision" href="http://buenosaires.gob.ar/areasdegobierno" />
+    <script
+      async=""
+      src="https://buenosaires.gob.ar//www.googletagmanager.com/gtm.js?id=GTM-WRB24B"
+    ></script>
+    <script>
+      window.a2a_config = window.a2a_config || {};
+      a2a_config.callbacks = [];
+      a2a_config.overlays = [];
+      a2a_config.templates = {};
+      a2a_config.callbacks.push({
+        ready: my_addtoany_onready,
+      });
+      function my_addtoany_onready() {
+        let addToAnyButtons =
+          document.getElementsByClassName("add_to_any_button");
+
+        for (let i = 0; i < addToAnyButtons.length; i++) {
+          addToAnyButtons[i].rel = "noreferrer";
+        }
+      }
+    </script>
+    <title>
+      Áreas de Gobierno | Buenos Aires Ciudad - Gobierno de la Ciudad Autónoma
+      de Buenos Aires
+    </title>
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://buenosaires.gob.ar/sites/default/files/css/css_Go98gJzh-mU04P5maqUUih2auEbqlXgtiVJNrDSnjhY.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://buenosaires.gob.ar//sites/default/files/css/css_nhnUDljokgyBnaE1DDNTJRnXlKLW11zyl5Yp37M2_3Q.css"
+    />
+    <script src="https://buenosaires.gob.ar//core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+    <script
+      src="https://script.crazyegg.com/pages/scripts/0113/5066.js"
+      async=""
+    ></script>
+    <script
+      src="https://static.addtoany.com/menu/modules/core.11bfb520.js"
+      type="module"
+    ></script>
+  </head>
+
+  <!-- Google Tag Manager -->
+  <body
+    class="layout-one-sidebar layout-sidebar-first page-node-79280 path-node node--type-area"
+  >
+    <noscript
+      ><iframe
+        src="https://buenosaires.gob.ar//www.googletagmanager.com/ns.html?id=GTM-WRB24B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WRB24B");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Pasar al contenido principal
+    </a>
+
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+      <div id="page-wrapper">
+        <div id="page">
+          <header
+            id="header"
+            class="navbar navbar-light search-active"
+            role="banner"
+            aria-label="Encabezado del sitio"
+          >
+            <div class="container">
+              <a
+                href="https://buenosaires.gob.ar/inicio/"
+                target="_self"
+                title="Inicio"
+                rel="home"
+                class="navbar-brand"
+              >
+                <img
+                  src="https://buenosaires.gob.ar/sites/default/files/logo.png"
+                  alt="Inicio"
+                  class="header-logo"
+                />
+              </a>
+
+              <div class="navbar-search">
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a
+                        href="https://buenosaires.gob.ar/inicio/"
+                        class="nav-link nav-link-sm active"
+                        target="_self"
+                      >
+                        <span>Inicio</span>
+                      </a>
+                    </li>
+                    <li class="nav-item d-responsive">
+                      <div class="navbar-search">
+                        <form
+                          class="form-search form-search-sm"
+                          action="https://buenosaires.gob.ar/bweb"
+                          method="GET"
+                          data-drupal-form-fields="header-search-2"
+                          style="margin: 0;"
+                        >
+                          <div class="form-group">
+                            <input
+                              type="search"
+                              class="form-control form-control-sm input-search"
+                              id="header-search-2"
+                              name="keys"
+                              placeholder="Buscar..."
+                              aria-label="Ingrese su búsqueda"
+                              maxlength="100"
+                            />
+                            <button class="reset" type="reset"></button>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <div class="highlighted">
+          <aside class="container section clearfix" role="complementary">
+            <div data-drupal-messages-fallback="" class="hidden"></div>
+          </aside>
+        </div>
+
+        <div id="main-wrapper">
+          <div id="main">
+            <main class="main-content" id="content" role="main">
+              <section class="section">
+                <a id="main-content" tabindex="-1"></a>
+
+                <div
+                  id="block-obelisco-content"
+                  class="block block-system block-system-main-block"
+                >
+                  <div class="content">
+                    <article
+                      role="article"
+                      about="https://buenosaires.gob.ar/areasdegobierno"
+                      class="node node--type-area node--view-mode-full clearfix pb-5"
+                    >
+                      <header></header>
+
+                      <div class="node__content clearfix">
+                        <div class="bg-light _none pt-4 pb-3 mb-4">
+                          <div class="container">
+                            <div class="layout row layout-builder__layout">
+                              <div class="col-12">
+                                <div
+                                  class="_none block block-system block-system-breadcrumb-block"
+                                >
+                                  <div class="content">
+                                    <nav
+                                      role="navigation"
+                                      aria-label="breadcrumb"
+                                    >
+                                      <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                          <a href="https://buenosaires.gob.ar/"
+                                            >Buenos Aires</a
+                                          >
+                                        </li>
+                                      </ol>
+                                    </nav>
+                                  </div>
+                                </div>
+
+                                <div
+                                  class="_none block block-layout-builder block-field-blocknodeareatitle"
+                                >
+                                  <div class="content">
+                                    <h1 class="mb-3">Áreas de Gobierno</h1>
+                                  </div>
+                                </div>
+
+                                <div
+                                  class="_none block block-layout-builder block-field-blocknodeareafield-summary"
+                                >
+                                  <div class="content">
+                                    <p class="lead">
+                                      Conocé cada una de las áreas que conforman
+                                      el Gobierno de la Ciudad de Buenos Aires.
+                                      <br />
+                                      Filtrá por nombre con la barra de
+                                      búsqueda, se remarcará la tarjeta que
+                                      coincida, también podes presionar sobre la
+                                      tarjeta para descubrir las subjerarquías
+                                      de la misma. <br />
+                                      Ajusta el zoom con la rueda del ratón, si
+                                      estas en celular con los gestos de zoom.
+                                    </p>
+                                  </div>
+                                </div>
+                                <nav
+                                  role="navigation"
+                                  aria-labelledby="-menu"
+                                  class="_none mt-4 mb-4 block block-menu navigation menu--menu-men-reas-de-gobierno"
+                                >
+                                  <h2 class="visually-hidden" id="-menu"></h2>
+
+                                  <nav></nav>
+                                </nav>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_none">
+                          <div class="container container_chart">
+                            <style>
+                              .container_chart {
+                                height: 90vh;
+                              }
+                              .chart-container {
+                                width: 100vw !important;
+                                position: absolute;
+                                left: 0;
+                              }
+                              .card {
+                                font-family: "Nunito", sans-serif;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                align-content: center;
+                                justify-content: center;
+                                border-radius: 10px;
+                                border: 2px solid #3d3d3d;
+                                padding: 10px;
+                                border-radius: 10px;
+                                height: max-content !important;
+                              }
+                              #id20980000 {
+                                border: 2px solid #007bc7 !important;
+                                background-color: #ffff !important;
+                              }
+
+                              .parent_20980000 {
+                                border: 2px solid #007bc7 !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20400000 {
+                                border: 2px solid #39393a !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_21010000 {
+                                border: 2px solid #ffa82e !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_09010000 {
+                                border: 2px solid #99b5ff !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_08010000 {
+                                border: 2px solid #af99ff !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20171000 {
+                                border: 2px solid #99ffaf !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20100000 {
+                                border: 2px solid #e8ff99 !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20390000 {
+                                border: 2px solid #c93b3b !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20981000 {
+                                border: 2px solid #ffa82e !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_20150000 {
+                                border: 2px solid #ff99e8 !important;
+                                background-color: #f5f9fc !important;
+                              }
+                              .parent_undefined {
+                                border: 2px solid #26874a !important;
+                                background-color: #f5f9fc !important;
+                              }
+
+                              .card:hover {
+                                border: 2px solid #005387 !important;
+                              }
+
+                              .node-button-foreign-object {
+                                display: none;
+                              }
+
+                              .name {
+                                font-size: 20px;
+                                color: #38485c;
+                              }
+
+                              .body {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 8px;
+                              }
+                            </style>
+                            <div class="form-group">
+                              <input
+                                type="search"
+                                class="form-control form-control-sm input-search"
+                                id="header-search-2"
+                                name="keys"
+                                placeholder="Buscar por nombre..."
+                                aria-label="Ingrese su búsqueda"
+                                maxlength="100"
+                                oninput="filterChart(event)"
+                              />
+                              <button class="reset" type="reset"></button>
+                            </div>
+                            <div class="chart-container"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div
+                  id="block-webform-2"
+                  class="block block-webform block-webform-block"
+                >
+                  <div class="content">
+                    <span
+                      id="webform-submission-gcaba-feedback-negativo-node-79280-form-ajax-content"
+                    ></span>
+                    <div
+                      id="webform-submission-gcaba-feedback-negativo-node-79280-form-ajax"
+                      class="webform-ajax-form-wrapper"
+                      data-effect="fade"
+                      data-progress-type="throbber"
+                    >
+                      <form
+                        class="webform-submission-form webform-submission-add-form webform-submission-gcaba-feedback-negativo-form webform-submission-gcaba-feedback-negativo-add-form webform-submission-gcaba-feedback-negativo-node-79280-form webform-submission-gcaba-feedback-negativo-node-79280-add-form js-webform-disable-autosubmit js-webform-details-toggle webform-details-toggle"
+                        data-drupal-selector="webform-submission-gcaba-feedback-negativo-node-79280-add-form"
+                        action="https://buenosaires.gob.ar/areasdegobierno"
+                        method="post"
+                        id="webform-submission-gcaba-feedback-negativo-node-79280-add-form"
+                        accept-charset="UTF-8"
+                        data-drupal-form-fields="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-categorias,edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-informacion,edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-diseo,edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-funcionalidad,edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-other-,edit-en-que-aspectos-esta-pagina-no-es-util-other,feedbackNegativeCancel,edit-actions-wizard-next,edit-url"
+                      >
+                        <div
+                          id="feedback-negative-form-container"
+                          class="footer-info d-none"
+                        >
+                          <div
+                            class="container"
+                            style="flex-flow: column; align-items: start"
+                          >
+                            <div class="webform-progress col-3 float-right">
+                              <ul
+                                class="webform-progress-tracker progress-tracker progress-tracker--vertical"
+                                data-webform-progress-steps=""
+                              >
+                                <li
+                                  data-webform-page="checkboxes"
+                                  title="Paso 1 de 2"
+                                  class="progress-step is-active"
+                                >
+                                  <div
+                                    class="progress-marker"
+                                    data-webform-progress-step=""
+                                    data-webform-progress-link=""
+                                    data-text="1"
+                                  ></div>
+
+                                  <div class="progress-text">
+                                    <div
+                                      class="progress-title"
+                                      data-webform-progress-link=""
+                                    >
+                                      <span
+                                        class="visually-hidden"
+                                        data-webform-progress-state=""
+                                        >Actual</span
+                                      >
+                                      Paso 1 de 2
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  data-webform-page="texto"
+                                  title="Paso 2 de 2"
+                                  class="progress-step"
+                                >
+                                  <div
+                                    class="progress-marker"
+                                    data-webform-progress-step=""
+                                    data-webform-progress-link=""
+                                    data-text="2"
+                                  ></div>
+
+                                  <div class="progress-text">
+                                    <div
+                                      class="progress-title"
+                                      data-webform-progress-link=""
+                                    >
+                                      <span
+                                        class="visually-hidden"
+                                        data-webform-progress-state=""
+                                      ></span>
+                                      Paso 2 de 2
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  data-webform-page="webform_confirmation"
+                                  title="Complete"
+                                  class="progress-step"
+                                >
+                                  <div
+                                    class="progress-marker"
+                                    data-webform-progress-step=""
+                                    data-webform-progress-link=""
+                                    data-text="3"
+                                  ></div>
+
+                                  <div class="progress-text">
+                                    <div
+                                      class="progress-title"
+                                      data-webform-progress-link=""
+                                    >
+                                      <span
+                                        class="visually-hidden"
+                                        data-webform-progress-state=""
+                                      ></span>
+                                      Complete
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div
+                              data-webform-key="checkboxes"
+                              data-drupal-selector="edit-checkboxes"
+                              id="edit-checkboxes"
+                              class="js-form-wrapper form-wrapper mb-3 col-9"
+                            >
+                              <fieldset
+                                id="edit-ayudanos-a-mejorar"
+                                class="form-group js-form-item js-form-type-item form-type-item js-form-item-ayudanos-a-mejorar form-item-ayudanos-a-mejorar form-no-label"
+                              >
+                                <h2>Ayudanos a mejorar</h2>
+                              </fieldset>
+                              <fieldset
+                                data-webform-required-error="Este campo es obligatorio."
+                                data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-"
+                                class="js-webform-checkboxes-other webform-checkboxes-other webform-checkboxes-other--wrapper fieldgroup form-composite webform-composite-visible-title required js-webform-type-webform-checkboxes-other webform-type-webform-checkboxes-other js-form-item form-item js-form-wrapper"
+                                id="edit-en-que-aspectos-esta-pagina-no-es-util-"
+                                style="padding: 2rem 1rem"
+                              >
+                                <legend>
+                                  <span
+                                    class="fieldset-legend js-form-required form-required"
+                                    >¿En qué aspectos esta página no es
+                                    útil?</span
+                                  >
+                                </legend>
+                                <div class="fieldset-wrapper">
+                                  <div
+                                    id="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes"
+                                    class="js-webform-checkboxes webform-options-display-one-column checkbox"
+                                  >
+                                    <div
+                                      class="js-form-item js-form-type-checkbox checkbox form-check js-form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-categorias form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-categorias custom-control custom-checkbox"
+                                    >
+                                      <input
+                                        data-webform-required-error="Este campo es obligatorio."
+                                        data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-categorias"
+                                        type="checkbox"
+                                        id="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-categorias"
+                                        name="_en_que_aspectos_esta_pagina_no_es_util_[checkboxes][categorias]"
+                                        value="categorias"
+                                        class="form-checkbox form-check-input custom-control-input"
+                                        required="required"
+                                      />
+                                      <label
+                                        class="form-check-label custom-control-label"
+                                        for="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-categorias"
+                                      >
+                                        Es difícil encontrar secciones o
+                                        categorías relevantes.
+                                      </label>
+                                    </div>
+
+                                    <div
+                                      class="js-form-item js-form-type-checkbox checkbox form-check js-form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-informacion form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-informacion custom-control custom-checkbox"
+                                    >
+                                      <input
+                                        data-webform-required-error="Este campo es obligatorio."
+                                        data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-informacion"
+                                        type="checkbox"
+                                        id="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-informacion"
+                                        name="_en_que_aspectos_esta_pagina_no_es_util_[checkboxes][informacion]"
+                                        value="informacion"
+                                        class="form-checkbox form-check-input custom-control-input"
+                                      />
+                                      <label
+                                        class="form-check-label custom-control-label"
+                                        for="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-informacion"
+                                      >
+                                        La información en el sitio web es
+                                        confusa o incompleta.
+                                      </label>
+                                    </div>
+
+                                    <div
+                                      class="js-form-item js-form-type-checkbox checkbox form-check js-form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-diseño form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-diseño custom-control custom-checkbox"
+                                    >
+                                      <input
+                                        data-webform-required-error="Este campo es obligatorio."
+                                        data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-diseo"
+                                        type="checkbox"
+                                        id="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-diseo"
+                                        name="_en_que_aspectos_esta_pagina_no_es_util_[checkboxes][diseño]"
+                                        value="diseño"
+                                        class="form-checkbox form-check-input custom-control-input"
+                                      />
+                                      <label
+                                        class="form-check-label custom-control-label"
+                                        for="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-diseo"
+                                      >
+                                        El diseño visual no es agradable.
+                                      </label>
+                                    </div>
+
+                                    <div
+                                      class="js-form-item js-form-type-checkbox checkbox form-check js-form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-funcionalidad form-item--en-que-aspectos-esta-pagina-no-es-util--checkboxes-funcionalidad custom-control custom-checkbox"
+                                    >
+                                      <input
+                                        data-webform-required-error="Este campo es obligatorio."
+                                        data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-funcionalidad"
+                                        type="checkbox"
+                                        id="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-funcionalidad"
+                                        name="_en_que_aspectos_esta_pagina_no_es_util_[checkboxes][funcionalidad]"
+                                        value="funcionalidad"
+                                        class="form-checkbox form-check-input custom-control-input"
+                                      />
+                                      <label
+                                        class="form-check-label custom-control-label"
+                                        for="edit-en-que-aspectos-esta-pagina-no-es-util-checkboxes-funcionalidad"
+                                      >
+                                        La funcionalidad del sitio web no es
+                                        intuitiva.
+                                      </label>
+                                    </div>
+                                  </div>
+
+                                  <fieldset
+                                    class="js-webform-checkboxes-other-input webform-checkboxes-other-input form-group js-form-item js-form-type-textfield form-type-textfield js-form-item--en-que-aspectos-esta-pagina-no-es-util--other form-item--en-que-aspectos-esta-pagina-no-es-util--other form-no-label"
+                                    style="display: none"
+                                  >
+                                    <label
+                                      for="edit-en-que-aspectos-esta-pagina-no-es-util-other"
+                                      class="js-form-required form-required"
+                                    ></label>
+                                    <input
+                                      data-webform-required-error="Este campo es obligatorio."
+                                      data-drupal-selector="edit-en-que-aspectos-esta-pagina-no-es-util-other"
+                                      type="text"
+                                      id="edit-en-que-aspectos-esta-pagina-no-es-util-other"
+                                      name="_en_que_aspectos_esta_pagina_no_es_util_[other]"
+                                      value=""
+                                      size="60"
+                                      maxlength="255"
+                                      placeholder=""
+                                      class="form-control"
+                                    />
+                                  </fieldset>
+                                </div>
+                              </fieldset>
+                            </div>
+                            <div
+                              data-drupal-selector="edit-container"
+                              id="edit-container"
+                              class="js-form-wrapper form-wrapper mb-3 col-9"
+                            >
+                              <div
+                                class="footer-info-actions form-actions webform-actions js-form-wrapper form-wrapper mb-3"
+                                data-drupal-selector="edit-actions"
+                                id="edit-actions"
+                              >
+                                <button
+                                  class="btn btn-outline-secondary button js-form-submit form-submit"
+                                  id="feedbackNegativeCancel"
+                                  data-drupal-selector="edit-show-feedback-form"
+                                  type="button"
+                                  name="op"
+                                  value="Cancelar"
+                                >
+                                  Cancelar</button
+                                ><button
+                                  class="webform-button--next button js-form-submit form-submit btn btn-primary"
+                                  data-drupal-selector="edit-actions-wizard-next"
+                                  data-disable-refocus="true"
+                                  type="submit"
+                                  id="edit-actions-wizard-next"
+                                  name="op"
+                                  value="Siguiente"
+                                >
+                                  Siguiente
+                                </button>
+                              </div>
+                            </div>
+                            <input
+                              autocomplete="off"
+                              data-drupal-selector="form-rjwxk0ditttssnbuh1vpzc5tuklj4rzqqcufatybuey"
+                              type="hidden"
+                              name="form_build_id"
+                              value="form-Rjwxk0ditTtSsNBUh1vpzc5tuklJ4RZQqCUFATyBuEY"
+                              class="form-control"
+                            />
+                            <input
+                              data-drupal-selector="edit-webform-submission-gcaba-feedback-negativo-node-79280-add-form"
+                              type="hidden"
+                              name="form_id"
+                              value="webform_submission_gcaba_feedback_negativo_node_79280_add_form"
+                              class="form-control"
+                            />
+                            <div
+                              class="url-textfield js-form-wrapper form-wrapper mb-3"
+                              style="display: none !important"
+                            >
+                              <fieldset
+                                class="form-group js-form-item js-form-type-textfield form-type-textfield js-form-item-url form-item-url"
+                              >
+                                <label for="edit-url" class="form-required mt-2"
+                                  >Leave this field blank</label
+                                >
+                                <input
+                                  autocomplete="off"
+                                  data-drupal-selector="edit-url"
+                                  type="text"
+                                  id="edit-url"
+                                  name="url"
+                                  value=""
+                                  size="20"
+                                  maxlength="128"
+                                  class="form-control"
+                                />
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <footer class="main-footer">
+          <div class="container">
+            <section>
+              <h4>Teléfonos útiles</h4>
+
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="tel:102">102 - Niñez y Adolescencia</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="tel:103">103 - Emergencias</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="tel:107">107 - SAME</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="tel:911">911 - Policía</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="tel:144">144 - Violencia de género</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="tel:147">147 - Atención ciudadana</a>
+                </li>
+              </ul>
+
+              <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles"
+                >Ver todos los teléfonos</a
+              >
+            </section>
+
+            <section>
+              <h4>Redes de la ciudad</h4>
+
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/GCBA">
+                    <i class="bx bxl-facebook"></i>Facebook
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/buenosaires">
+                    <i class="bx bxl-instagram"></i>Instagram
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/gcba">
+                    <i class="bx bxl-twitter"></i>Twitter
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com/user/GCBA">
+                    <i class="bx bxl-youtube"></i>YouTube
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a
+                    href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+                  >
+                    <i class="bx bxl-linkedin"></i>LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="container">
+            <section class="footer-legal-section">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+                  <img
+                    class="d-lg-none"
+                    src="https://buenosaires.gob.ar//themes/custom/obelisco/images/ciudad-ba-sm.png"
+                    alt="Logo de la Ciudad de Buenos Aires"
+                  />
+                  <img
+                    class="d-none d-lg-inline"
+                    src="https://buenosaires.gob.ar//themes/custom/obelisco/images/ciudad-ba.png"
+                    alt="Logo de la Ciudad de Buenos Aires"
+                  />
+                  <img
+                    class="img-vamos-ba"
+                    src="https://buenosaires.gob.ar//themes/custom/obelisco/images/vamos-ba.png"
+                    alt="Logo de Vamos Buenos Aires"
+                  />
+                </div>
+                <div class="col-12">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="https://boletinoficial.buenosaires.gob.ar"
+                        >Boletín oficial</a
+                      >
+                    </li>
+
+                    <li class="list-inline-item">
+                      <a
+                        href="https://buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones"
+                        >Términos y condiciones</a
+                      >
+                    </li>
+
+                    <li class="list-inline-item">
+                      <a href="https://buenosaires.gob.ar/privacidad"
+                        >Política de privacidad</a
+                      >
+                    </li>
+
+                    <li class="list-inline-item">
+                      <a
+                        href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                        >Oficios Judiciales</a
+                      >
+                    </li>
+
+                    <li class="list-inline-item">
+                      <a
+                        href="https://buenosaires.gob.ar/gobierno/transparencia "
+                        >Transparencia</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="seccion_footer">
+              <div class="footer-license-text">
+                Los contenidos de buenosaires.gob.ar están licenciados bajo
+                Creative Commons Reconocimiento 2.5 Argentina License.
+              </div>
+            </section>
+
+            <section class="row region region-footer">
+              <div
+                id="block-gcababa147chat"
+                class="block block-gcaba-ba147 block-gcaba-ba147-block"
+              >
+                <div class="content">
+                  <script>
+                    var ba147url =
+                      "https://go.botmaker.com/rest/webchat/p/OX7TNDC421/init.js";
+                  </script>
+                </div>
+              </div>
+            </section>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+    <script src="https://buenosaires.gob.ar/sites/default/files/js/js_UZXfyW8Y9MhC0a-3fDi0PF90GpvLRv_dw_qEdtsx66g.js"></script>
+    <script src="https://static.addtoany.com/menu/page.js" async=""></script>
+    <script src="https://buenosaires.gob.ar/sites/default/files/js/js__E_7CQdlJJVeYjEZCuRCJHdqpMx0XrN_0RSzF-1aTH4.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://buenosaires.gob.ar/sites/default/files/js/js_kgwCjfG0RTFe8FiENJD04FPX8iDBDZ5D5Qgsl07sHm4.js"></script>
+
+    <div
+      id="drupal-live-announce"
+      class="visually-hidden"
+      aria-live="polite"
+      aria-busy="false"
+    ></div>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://go.botmaker.com/rest/webchat/p/OX7TNDC421/init.js"
+    ></script>
+    <div style="position: static">
+      <div
+        style="
+          height: 1px;
+          width: 1px;
+          position: absolute;
+          z-index: 100000;
+          top: 0px;
+          visibility: hidden;
+        "
+      >
+        <iframe
+          id="a2a_sm_ifr"
+          title="AddToAny Utility Frame"
+          transparency="true"
+          allowtransparency="true"
+          frameborder="0"
+          src="https://static.addtoany.com/menu/sm.24.html#type=core&amp;event=load"
+          style="
+            height: 1px;
+            width: 1px;
+            border: 0px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            z-index: 100000;
+            display: none;
+          "
+        ></iframe>
+      </div>
+    </div>
+    <div
+      style="
+        overflow: hidden;
+        position: fixed;
+        width: 330px;
+        height: 110px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 2147483647;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius:10px;
-        border: 2px solid #f0f0f0;
-        padding : 10px;
-				border-radius:10px;
-				border: 2px solid #f0f0f0;
-      }
-     .card:hover{
-        border: 2px solid #005387 !important;
-      }
-    .card:hover, .card:hover .name{
-      color: #005387 !important;
-      text-decoration: underline;
-      }
-    .name{
-      font-size:15px;
-      color:#38485C;
-      margin-left:20px;
-    }
+        left: unset;
+      "
+    >
+      <iframe
+        title="Botmaker"
+        name="Botmaker"
+        style="
+          border: 0px;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          max-height: 100vh;
+          display: flex;
+        "
+      ></iframe>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@3.0.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
 
-
-    </style>
-	<input
-	type="search"
-	placeholder="search by name"
-	oninput="filterChart(event)"
-	/>
-    <div class="chart-container" style="border-radius: 10px;  box-shadow: inset 0 0 10px #494949;"></div>
-
+    <script src="./script.js"></script>
   </body>
-
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@3.0.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
-
-  <script>
-
-	let chart;
-
-	function filterChart(e) {
-
-		// Get input value
-		const value = e.srcElement.value;
-
-		// Clear previous higlighting
-		chart.clearHighlighting();
-
-		// Get chart nodes
-		const data = chart.data();
-
-		// Mark all previously expanded nodes for collapse
-		data.forEach((d) => (d._expanded = false));
-
-		// Loop over data and check if input value matches any name
-		data.forEach((d) => {
-		if (value != '' && d.name.toLowerCase().includes(value.toLowerCase())) {
-			// If matches, mark node as highlighted
-			d._highlighted = true;
-			d._expanded = true;
-		}
-		});
-
-		// Update data and rerender graph
-		chart.data(data).render().fit();
-
-		console.log('filtering chart', e.srcElement.value);
-	}
-
-	d3.csv(
-	  'https://raw.githubusercontent.com/bumbeishvili/sample-data/main/data-oracle.csv'
-	).then((data) => {
-	  chart = new d3.OrgChart()
-		.nodeHeight((d) => 85 + 25) // Largo de cada nodo
-		.nodeWidth((d) => 220 + 2) // Ancho de cada nodo
-		.childrenMargin((d) => 30) // Margin entre padre/hijo
-		.compactMarginBetween((d) => 50)
-		.compactMarginPair((d) => 50) //
-		.neighbourMargin((a, b) => 20)
-		.nodeContent(function (d, i, arr, state) {
-		  const color = '#fffff';
-		  const imageDiffVert = 15 + 3; //Margin top de la imagen. (Para modificar su posición en eje x)
-
-
-
-		  return `
-			<div
-            style=
-            'width:${d.width}px;
-            height:${d.height}px;
-            padding-top:${imageDiffVert - 2}px;
-            padding-left:1px;
-            padding-right:1px'
-            '
-          	>
-			  <div class="card"
-			  style="
-
-			  background-color:${color};
-
-			  ">
-				  <img src=" ${d.data.image}"
-				  style="
-				  border-radius:100px;
-				  width:50px;
-				  height:50px;
-				  border: 2px solid #f0f0f0
-				  "/>
-					  <div class="name" style="">  ${d.data.name} </div>
-					  <div style="color:#716E7B;margin-left:20px;margin-top:3px;font-size:10px;"> ${d.data.position} </div>
-
-			  </div>
-			</div>
-			`;
-		})
-
-		.container('.chart-container')
-		.data(data)
-		.render();
-	});
-  </script>
-
 </html>

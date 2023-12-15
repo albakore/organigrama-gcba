@@ -65,8 +65,8 @@ function convertirNombre(name) {
                                         (word) =>
                                           word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
                                       ).join(" ").split(', ')
-                                        
-                                      
+
+
     return nombre + " " + apellido
   } else {
     return ""; //Si es null, devuelve null o lo que sea.
@@ -82,13 +82,12 @@ d3.json("./cabecera.json").then((data) => {
     .compactMarginPair((d) => window.innerWidth < 900 ? 100 : 260) //margin sides
     .neighbourMargin((a, b) => 70)
     .nodeContent(function (d, i, arr, state) {
-      
+
 
       return `
         <div
               style=
               'width:${d.width}px;
-              height:${d.height}px;
               padding-top:${imageDiffVert - 2}px;
               padding-left:1px;
               padding-right:1px'
