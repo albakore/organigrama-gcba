@@ -1,29 +1,21 @@
 let chart;
 let cabecera;
 
-// Ejemplo implementando el metodo POST:
-async function getCabeceras(url = '') {
-  // Opciones por defecto estan marcadas con un *
-  const response = await fetch(url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
+//Funcion para escribir correctamente el nombre:
+function convertirNombre(name) {
+  if (name) {
+    const [apellido, nombre] = name.split(" ")
+                                      .map(
+                                        (word) =>
+                                          word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                                      ).join(" ").split(', ')
 
-// getCabeceras('https://example.com/answer')
-//   .then(data => {
-//     console.log(data); // JSON data parsed by `data.json()` call
-//   });
+
+    return nombre + " " + apellido
+  } else {
+    return ""; //Si es null, devuelve null o lo que sea.
+  }
+}
 
 //Funcion de la barra de busqueda:
 function filterChart(e) {
@@ -42,7 +34,7 @@ function filterChart(e) {
   data.forEach((d) => {
     if (
       value != "" &&
-      d.name?.toString().toLowerCase().includes(value.toLowerCase())
+      convertirNombre(d['apellido-nombre']).toString().toLowerCase().includes(value.toLowerCase())
     ) {
       // If matches, mark node as highlighted
 
@@ -84,22 +76,6 @@ const horizontalSpacing = 350; // Espaciado horizontal entre nodos
 
 const color = "#f5f9fc";
 const imageDiffVert = 0; //Margin top de la imagen. (Para modificar su posición en eje x)
-
-//Funcion para escribir correctamente el nombre:
-function convertirNombre(name) {
-  if (name) {
-    const [apellido, nombre] = name.split(" ")
-                                      .map(
-                                        (word) =>
-                                          word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-                                      ).join(" ").split(', ')
-
-
-    return nombre + " " + apellido
-  } else {
-    return ""; //Si es null, devuelve null o lo que sea.
-  }
-}
 
 d3.json("./newCabecera.json").then((data) => {
   chart = new d3.OrgChart()

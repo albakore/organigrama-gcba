@@ -40,7 +40,7 @@
     "fuera-nivel": null,
     "path": "/ROOT/20980000/20400000/21010000",
     "path-nombres": "\\Jefe de Gobierno\\ViceJefe de Gobierno\\Jefe de Gabinete",
-    "apellido-nombre": "GRINDETTI,NESTOR OSVALDO",
+    "apellido-nombre": "GRINDETTI, NESTOR OSVALDO",
     "mail-laboral": "ngrindetti@buenosaires.gob.ar",
     "telefono-laboral": null,
     "domicilio-laboral": null,
@@ -238,23 +238,6 @@
     "parentId": "20980000"
   },
   {
-    "sigla": "SECGE ",
-    "descripcion-reparticion": "SECR General",
-    "tipo-reparticion": "SECR",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General",
-    "apellido-nombre": "POMPEO, FULVIO VALERIO",
-    "mail-laboral": "fpompeo@buenosaires.gob.ar",
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "SI",
-    "ranking": "6",
-    "tiene-hijos": "VERDADERO",
-    "id": "20171000",
-    "parentId": "20980000"
-  },
-  {
     "sigla": "SECC",
     "descripcion-reparticion": "SECR Comunicación",
     "tipo-reparticion": "SSEC",
@@ -327,7 +310,7 @@
     "descripcion-reparticion": "SS Comunicación Social",
     "tipo-reparticion": "SSEC/DIREJE",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20100000/20140020",
+    "path": "/ROOT/20980000/20980000/20140020",
     "path-nombres": "\\Jefe de Gobierno\\SECR de Medios\\SS Comunicación Social",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -336,14 +319,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "VERDADERO",
     "id": "20140020",
-    "parentId": "20100000"
+    "parentId": "20980000"
   },
   {
     "sigla": "DGPLM",
     "descripcion-reparticion": "DG Planeamiento de Medios",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20100000/20140020/20140040",
+    "path": "/ROOT/20980000/20980000/20140020/20140040",
     "path-nombres": "\\Jefe de Gobierno\\SECR de Medios\\SS Comunicación Social\\DG Planeamiento de Medios",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -359,7 +342,7 @@
     "descripcion-reparticion": "DG Actos y Agenda de Gobierno",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20100000/20172300",
+    "path": "/ROOT/20980000/20980000/20172300",
     "path-nombres": "\\Jefe de Gobierno\\SECR de Medios\\DG Actos y Agenda de Gobierno",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -368,7 +351,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20172300",
-    "parentId": "20100000"
+    "parentId": "20980000"
   },
   {
     "sigla": "SECGE ",
@@ -403,27 +386,11 @@
     "parentId": "20171000"
   },
   {
-    "sigla": "DGREIN",
-    "descripcion-reparticion": "DG Relaciones Institucionales",
-    "tipo-reparticion": "DG",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171510",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones Institucionales",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20171510",
-    "parentId": "20171003"
-  },
-  {
     "sigla": "DGDIN",
     "descripcion-reparticion": "DG Desarrollo Institucional",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171510/21012012",
+    "path": "/ROOT/20980000/20171000/20171000/20171510/21012012",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones Institucionales\\DG Desarrollo Institucional",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -439,7 +406,7 @@
     "descripcion-reparticion": "DG Relaciones con el Sector Privado",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171520",
+    "path": "/ROOT/20980000/20171000/20171000/20171520",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones con el Sector Privado",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -448,14 +415,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20171520",
-    "parentId": "20171003"
+    "parentId": "20171000"
   },
   {
     "sigla": "DGAIIG",
     "descripcion-reparticion": "DG Articulación Institucional para la Igualdad de Género",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20980220",
+    "path": "/ROOT/20980000/20171000/20171000/20980220",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Articulación Institucional para la Igualdad de Género",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -464,7 +431,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20980220",
-    "parentId": "20171003"
+    "parentId": "20171000"
   },
   {
     "sigla": null,
@@ -515,22 +482,6 @@
     "parentId": "20171100"
   },
   {
-    "sigla": "SSRINS",
-    "descripcion-reparticion": "SS Relaciones Institucionales",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171101",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General\\SS Relaciones Institucionales",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20171101",
-    "parentId": "20171000"
-  },
-  {
     "sigla": "DGCU",
     "descripcion-reparticion": "DG Cultos",
     "tipo-reparticion": "DG",
@@ -579,22 +530,6 @@
     "parentId": "20171000"
   },
   {
-    "sigla": "SSPDU",
-    "descripcion-reparticion": "SS Promoción y Desarrollo Universitario",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171600",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General\\SS Promoción y Desarrollo Universitario",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20171600",
-    "parentId": "20171000"
-  },
-  {
     "sigla": "DGVU",
     "descripcion-reparticion": "DG Vinculación Universitaria",
     "tipo-reparticion": "DG",
@@ -625,22 +560,6 @@
     "tiene-hijos": "FALSO",
     "id": "20171620",
     "parentId": "20171600"
-  },
-  {
-    "sigla": "SSRIN",
-    "descripcion-reparticion": "SS Relaciones Internacionales",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20710000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General\\SS Relaciones Internacionales",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20710000",
-    "parentId": "20171000"
   },
   {
     "sigla": "DGPRI",
@@ -691,22 +610,6 @@
     "parentId": "20710000"
   },
   {
-    "sigla": "SECLYT",
-    "descripcion-reparticion": "SECR Legal y Técnica",
-    "tipo-reparticion": "SECR",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20390000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Legal y Técnica",
-    "apellido-nombre": "MONTIEL, MARIA LETICIA",
-    "mail-laboral": "leticiamontiel@buenosaires.gob.ar",
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "SI",
-    "tiene-hijos": "VERDADERO",
-    "id": "20390000",
-    "parentId": "20980000"
-  },
-  {
     "sigla": "DGEGRAL",
     "descripcion-reparticion": "DG Escribanía General",
     "tipo-reparticion": "DG",
@@ -752,22 +655,6 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20340010",
-    "parentId": "20390000"
-  },
-  {
-    "sigla": "SSAJU",
-    "descripcion-reparticion": "SS Asuntos Jurídicos",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20390000/20390001",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Legal y Técnica\\SS Asuntos Jurídicos",
-    "apellido-nombre": "KAMIAN, MARIANA FLORENCIA",
-    "mail-laboral": "mkamian@buenosaires.gob.ar",
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20390001",
     "parentId": "20390000"
   },
   {
@@ -899,38 +786,6 @@
     "parentId": "20980000"
   },
   {
-    "sigla": "SECC",
-    "descripcion-reparticion": "SECR Comunicación",
-    "tipo-reparticion": "SSEC",
-    "fuera-nivel": "NO",
-    "path": "/ROOT/20980000/20981000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Comunicación",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "SI",
-    "tiene-hijos": "VERDADERO",
-    "id": "20981000",
-    "parentId": "20980000"
-  },
-  {
-    "sigla": "SSMYP",
-    "descripcion-reparticion": "SS Medios y Prensa",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20981000/20101000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Comunicación\\SS Medios y Prensa",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20101000",
-    "parentId": "20981000"
-  },
-  {
     "sigla": "DGPRE",
     "descripcion-reparticion": "DG Prensa",
     "tipo-reparticion": "DG",
@@ -1011,22 +866,6 @@
     "parentId": "20981000"
   },
   {
-    "sigla": "SSFE",
-    "descripcion-reparticion": "SS Festivales y Eventos",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20981000/20981200",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Comunicación\\SS Festivales y Eventos",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20981200",
-    "parentId": "20981000"
-  },
-  {
     "sigla": "DGCEMA",
     "descripcion-reparticion": "DG Coordinación de Eventos Masivos",
     "tipo-reparticion": "DG",
@@ -1091,22 +930,6 @@
     "parentId": "20981200"
   },
   {
-    "sigla": "SSCDI",
-    "descripcion-reparticion": "SS Comunicación Digital",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20981000/20981300",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Comunicación\\SS Comunicación Digital",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20981300",
-    "parentId": "20981000"
-  },
-  {
     "sigla": "DGPLES",
     "descripcion-reparticion": "DG Planificación Estratégica",
     "tipo-reparticion": "DG",
@@ -1137,22 +960,6 @@
     "tiene-hijos": "FALSO",
     "id": "20984100",
     "parentId": "20981300"
-  },
-  {
-    "sigla": "SSECCP",
-    "descripcion-reparticion": "SS Estrategia de la Comunicación, Contenidos y Producción",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20981000/20986000",
-    "path-nombres": "\\Jefe de Gobierno\\SECR Comunicación\\SS Estrategia de la Comunicación, Contenidos y Producción",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20986000",
-    "parentId": "20981000"
   },
   {
     "sigla": "DGCONTE",
@@ -2375,7 +2182,7 @@
     "descripcion-reparticion": "DG Personas Mayores",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20400000/45160300/45160370/45160500",
+    "path": "/ROOT/20400000/45160300/45160300/45160500",
     "path-nombres": "\\Vicejefatura de Gobierno\\SECR de Bienestar Integral\\SS para Personas Mayores\\DG Personas Mayores",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -2384,14 +2191,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "45160500",
-    "parentId": "45160370"
+    "parentId": "45160300"
   },
   {
     "sigla": "DGPAPM",
     "descripcion-reparticion": "DG Políticas Asistenciales para Personas Mayores",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20400000/45160300/45160370/45300000",
+    "path": "/ROOT/20400000/45160300/45160300/45300000",
     "path-nombres": "\\Vicejefatura de Gobierno\\SECR de Bienestar Integral\\SS para Personas Mayores\\DG Políticas Asistenciales para Personas Mayores",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -2400,7 +2207,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "45300000",
-    "parentId": "45160370"
+    "parentId": "45160300"
   },
   {
     "sigla": "DGPBS",
@@ -2567,7 +2374,7 @@
     "descripcion-reparticion": "DG Sistemas de Atención Ciudadana",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/21010000/21012414/21012400/21012410",
+    "path": "/ROOT/21010000/21012414/21012414/21012410",
     "path-nombres": "\\Jefatura de Gabinete de Ministros\\SECR Innovación y Transformación Digital\\SS Experiencia Digital\\DG Sistemas de Atención Ciudadana",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -2576,7 +2383,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "21012410",
-    "parentId": "21012400"
+    "parentId": "21012414"
   },
   {
     "sigla": "SSCIUI",
@@ -2631,7 +2438,7 @@
     "descripcion-reparticion": "DG Gobernanza de Datos",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/21010000/21012414/21012600/21012412",
+    "path": "/ROOT/21010000/21012414/21012414/21012412",
     "path-nombres": "\\Jefatura de Gabinete de Ministros\\SECR Innovación y Transformación Digital\\SS Políticas Públicas basadas en Evidencia\\DG Gobernanza de Datos",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -2640,7 +2447,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "21012412",
-    "parentId": "21012600"
+    "parentId": "21012414"
   },
   {
     "sigla": "ASINF",
@@ -4311,7 +4118,7 @@
     "descripcion-reparticion": "Comité de Seguridad en el Fútbol de la CABA Ley Nº 5.847",
     "tipo-reparticion": "F/N SSEC - DG",
     "fuera-nivel": "SI",
-    "path": "/ROOT/26010000/26010001/26010002/26751000",
+    "path": "/ROOT/26010000/26010001/26010001/26751000",
     "path-nombres": "\\Ministerio de Seguridad\\SECR Seguridad\\SS Seguridad en Eventos Deportivos\\Comité de Seguridad en el Fútbol de la CABA Ley Nº 5.847",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -4320,7 +4127,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "26751000",
-    "parentId": "26010002"
+    "parentId": "26010001"
   },
   {
     "sigla": "JPCDAD",
@@ -4423,7 +4230,7 @@
     "descripcion-reparticion": "DG Coordinación Operativa del Cuerpo de Agentes de Prevención",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/26010000/26010001/26011200/26011210",
+    "path": "/ROOT/26010000/26010001/26010001/26011210",
     "path-nombres": "\\Ministerio de Seguridad\\SECR Seguridad\\SS Participación Ciudadana en Seguridad\\DG Coordinación Operativa del Cuerpo de Agentes de Prevención",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -4432,7 +4239,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "26011210",
-    "parentId": "26011200"
+    "parentId": "26010001"
   },
   {
     "sigla": "SSRCAV",
@@ -5415,7 +5222,7 @@
     "descripcion-reparticion": "DG Gobernanza Metropolitana",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/28010000/28012000/21402000",
+    "path": "/ROOT/28010000/28010000/21402000",
     "path-nombres": "\\Ministerio de Justicia\\SS Asuntos Metropolitanos y Transferencia de Competencias\\DG Gobernanza Metropolitana",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -5424,14 +5231,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "21402000",
-    "parentId": "28012000"
+    "parentId": "28010000"
   },
   {
     "sigla": "DGTCAI",
     "descripcion-reparticion": "DG Transferencia de Competencias y Asuntos Interjurisdiccionales",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/28010000/28012000/28012001",
+    "path": "/ROOT/28010000/28010000/28012001",
     "path-nombres": "\\Ministerio de Justicia\\SS Asuntos Metropolitanos y Transferencia de Competencias\\DG Transferencia de Competencias y Asuntos Interjurisdiccionales",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -5440,7 +5247,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "28012001",
-    "parentId": "28012000"
+    "parentId": "28010000"
   },
   {
     "sigla": "MC",
@@ -6433,38 +6240,6 @@
     "tiene-hijos": "FALSO",
     "id": "55602001",
     "parentId": "55900000"
-  },
-  {
-    "sigla": "CDNNYA",
-    "descripcion-reparticion": "Consejo de los Derechos de Niñas, Niños y Adoles - Presidencia",
-    "tipo-reparticion": "F/N JGOB - SEC",
-    "fuera-nivel": "SI",
-    "path": "/ROOT/45010000/20150000",
-    "path-nombres": "\\Ministerio de Desarrollo Humano y Hábitat\\Consejo de los Derechos de Niñas, Niños y Adoles - Presidencia",
-    "apellido-nombre": "DEL AGUILA, BRENDA",
-    "mail-laboral": "bdelaguila@buenosaires.gob.ar",
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "SI",
-    "tiene-hijos": "VERDADERO",
-    "id": "20150000",
-    "parentId": "45010000"
-  },
-  {
-    "sigla": "VPCDNNYA",
-    "descripcion-reparticion": "Consejo de los Derechos de Niñas, Niños y Adoles. - Vicepresid",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/45010000/20150000/20150010",
-    "path-nombres": "\\Ministerio de Desarrollo Humano y Hábitat\\Consejo de los Derechos de Niñas, Niños y Adoles - Presidencia\\Consejo de los Derechos de Niñas, Niños y Adoles. - Vicepresid",
-    "apellido-nombre": "DEL AGUILA, BRENDA",
-    "mail-laboral": "bdelaguila@buenosaires.gob.ar",
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20150010",
-    "parentId": "20150000"
   },
   {
     "sigla": "DGPDES",
@@ -7831,7 +7606,7 @@
     "descripcion-reparticion": "DG Relaciones Institucionales",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171510",
+    "path": "/ROOT/20980000/20171000/20171000/20171510",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones Institucionales",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -7840,14 +7615,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "VERDADERO",
     "id": "20171510",
-    "parentId": "20171003"
+    "parentId": "20171000"
   },
   {
     "sigla": "DGDIN",
     "descripcion-reparticion": "DG Desarrollo Institucional",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171510/21012012",
+    "path": "/ROOT/20980000/20171000/20171000/20171510/21012012",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones Institucionales\\DG Desarrollo Institucional",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -7863,7 +7638,7 @@
     "descripcion-reparticion": "DG Relaciones con el Sector Privado",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20171520",
+    "path": "/ROOT/20980000/20171000/20171000/20171520",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Relaciones con el Sector Privado",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -7872,14 +7647,14 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20171520",
-    "parentId": "20171003"
+    "parentId": "20171000"
   },
   {
     "sigla": "DGAIIG",
     "descripcion-reparticion": "DG Articulación Institucional para la Igualdad de Género",
     "tipo-reparticion": "DG",
     "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171003/20980220",
+    "path": "/ROOT/20980000/20171000/20171000/20980220",
     "path-nombres": "\\Jefe de Gobierno\\SECR General\\Unidad para la Igualdad de Género y Asuntos Institucionales\\DG Articulación Institucional para la Igualdad de Género",
     "apellido-nombre": null,
     "mail-laboral": null,
@@ -7888,7 +7663,7 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20980220",
-    "parentId": "20171003"
+    "parentId": "20171000"
   },
   {
     "sigla": null,
@@ -7904,22 +7679,6 @@
     "DEPENDE_MINISTERIO": "NO",
     "tiene-hijos": "FALSO",
     "id": "20171010",
-    "parentId": "20171000"
-  },
-  {
-    "sigla": "SSGOARCU",
-    "descripcion-reparticion": "SS Gobierno Abierto y Rendición de Cuentas",
-    "tipo-reparticion": "SSEC/DIREJE",
-    "fuera-nivel": null,
-    "path": "/ROOT/20980000/20171000/20171100",
-    "path-nombres": "\\Jefe de Gobierno\\SECR General\\SS Gobierno Abierto y Rendición de Cuentas",
-    "apellido-nombre": null,
-    "mail-laboral": null,
-    "telefono-laboral": null,
-    "domicilio-laboral": null,
-    "DEPENDE_MINISTERIO": "NO",
-    "tiene-hijos": "VERDADERO",
-    "id": "20171100",
     "parentId": "20171000"
   },
   {
