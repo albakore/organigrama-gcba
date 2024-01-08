@@ -8,7 +8,7 @@ function convertirNombre(name) {
                                       .map(
                                         (word) =>
                                           word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-                                      ).join(" ").split(', ')
+                                      ).join(" ").split(',')
 
 
     return nombre + " " + apellido
